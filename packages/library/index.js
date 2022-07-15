@@ -8,3 +8,12 @@ export function isInstanceOfPMNode(object) {
 export function isInstanceOfPMEditorState(object) {
   return object instanceof EditorState
 }
+
+export function canBeHydrated(schema, nodeJson) {
+  try {
+    Node.fromJSON(schema, nodeJson)
+    return true
+  } catch {
+    return false
+  }
+}
