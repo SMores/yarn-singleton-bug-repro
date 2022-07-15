@@ -1,6 +1,6 @@
 {
   "name": "yarn-singleton-bug-repro-library",
-  "type": "module",
+  "type": "commonjs",
   "devDependencies": {
     "prosemirror-model": "^1.18.1",
     "prosemirror-state": "^1.4.1"

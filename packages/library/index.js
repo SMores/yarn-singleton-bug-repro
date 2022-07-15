@@ -1,19 +1,25 @@
-import { Node } from 'prosemirror-model'
-import { EditorState } from 'prosemirror-state'
+const { Node } = require('prosemirror-model')
+const { EditorState } = require('prosemirror-state')
 
-export function isInstanceOfPMNode(object) {
+function isInstanceOfPMNode(object) {
   return object instanceof Node
 }
 
-export function isInstanceOfPMEditorState(object) {
+function isInstanceOfPMEditorState(object) {
   return object instanceof EditorState
 }
 
-export function canBeHydrated(schema, nodeJson) {
+function canBeHydrated(schema, nodeJson) {
   try {
     Node.fromJSON(schema, nodeJson)
     return true
   } catch {
     return false
   }
+}
+
+module.exports = {
+  isInstanceOfPMEditorState,
+  isInstanceOfPMNode,
+  canBeHydrated
 }
