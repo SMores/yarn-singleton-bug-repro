@@ -1,0 +1,12 @@
+{
+  "name": "yarn-singleton-bug-repro",
+  "packageManager": "yarn@3.2.1",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "start": "yarn workspace yarn-singleton-bug-repro-application start"
+  }
+}

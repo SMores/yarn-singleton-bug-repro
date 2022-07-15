@@ -1,0 +1,9 @@
+{
+  "name": "yarn-singleton-bug-repro-library",
+  "type": "module",
+  "peerDependencies": {
+    "prosemirror-model": "^1.18.1",
+    "prosemirror-state": "^1.4.1"
+  },
+  "module": "index.js"
+}

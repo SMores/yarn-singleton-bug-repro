@@ -1,0 +1,13 @@
+{
+  "name": "yarn-singleton-bug-repro-application",
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "prosemirror-model": "^1.18.1",
+    "prosemirror-state": "^1.4.1",
+    "yarn-singleton-bug-repro-library": "workspace:^"
+  }
+}
