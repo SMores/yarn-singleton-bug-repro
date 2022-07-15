@@ -129,7 +129,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/library", {\
           "packageLocation": "./packages/library/",\
           "packageDependencies": [\
-            ["yarn-singleton-bug-repro-library", "workspace:packages/library"]\
+            ["yarn-singleton-bug-repro-library", "workspace:packages/library"],\
+            ["prosemirror-model", "npm:1.18.1"],\
+            ["prosemirror-state", "npm:1.4.1"]\
           ],\
           "linkType": "SOFT"\
         }]\

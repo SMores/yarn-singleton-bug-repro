@@ -53,6 +53,9 @@ __metadata:
 "yarn-singleton-bug-repro-library@workspace:^, yarn-singleton-bug-repro-library@workspace:packages/library":
   version: 0.0.0-use.local
   resolution: "yarn-singleton-bug-repro-library@workspace:packages/library"
+  dependencies:
+    prosemirror-model: ^1.18.1
+    prosemirror-state: ^1.4.1
   peerDependencies:
     prosemirror-model: ^1.18.1
     prosemirror-state: ^1.4.1
